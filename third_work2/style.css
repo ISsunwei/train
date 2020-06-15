@@ -28,7 +28,7 @@
   
   .header .header-box .header-box-right{
     float: right;
-  
+    padding-top: 5px;
   }
   
   .header .header-box .header-box-left span {
@@ -48,9 +48,6 @@
   .header .header-box .icon-mobile {
     float: right;
     visibility: hidden;
-    font-size: 16px;
-    align-items: center;
-    bottom: 2px;
   }
   
   .header .header-box .icon-mobile {
@@ -58,7 +55,7 @@
     padding: 5px;
     visibility: hidden;
     position: relative;
-    background-color: rgb(50, 46, 53);
+    background-color: rgb(22, 28, 30);
     color: white;
     border: none;
     cursor: pointer;
