@@ -9,7 +9,7 @@
   transition: all 0.4s ease-out;
 }
 .screen_container {
-  box-shadow: 0px 0px 0px 15px rgb(59, 119, 156);
+  box-shadow: 0px 0px 0px 35px rgb(59, 119, 156);
   border-radius: 280px;
 }
 div img{  
