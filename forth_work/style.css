@@ -1,0 +1,50 @@
+.screen_container{
+  position: relative;
+  width: 1000px;
+  height: 510px;
+  margin: 50px auto;
+  border: 1px solid #ddd;
+  overflow: hidden;
+
+  transition: all 0.4s ease-out;
+}
+.screen_container {
+  box-shadow: 0px 0px 0px 20px rgba(0, 0, 0, 0.6);
+  border-radius: 280px;
+}
+div img{  
+  cursor: pointer;  
+  transition: all 0.5s;
+}  
+div img:hover{  
+  transform: scale(1.25);
+} 
+.screen_toolbar{
+  width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+.screen_toolbar:hover {
+  color: #E2DFCE;
+  border-radius: 8px;
+  border: 1px solid #E2DFCE;
+  background: rgb(39,69,94);
+}
+.send,.clear{
+  padding: 5px 20px;
+  display: inline-block;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  margin: 5px;
+  background: rgb(77,74,85);
+  color: #fff;
+  cursor: pointer;
+}
+.footer {
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
+  background: rgb(39,69,94);
+  color:white;
+  text-align: center;
+}
