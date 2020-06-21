@@ -17,7 +17,7 @@ div img{
   transition: all 0.5s;
 }  
 div img:hover{  
-  transform: scale(1.25);
+  transform: scale(1.05);
 } 
 .screen_toolbar{
   width: 600px;
