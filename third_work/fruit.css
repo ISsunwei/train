@@ -138,9 +138,9 @@ tr td:last-child::before{
 .info-content {
     text-indent: 2em;
 }
-.info-tow {
-    font-size: 20px;
-    color: brown;
+.info-content::first-letter {
+    font-size: 32px;
+    color: rgb(177, 46, 46);
 }
 a:visited {
     color:indianred;
