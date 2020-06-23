@@ -37,6 +37,7 @@ function createScreenbullet(text) {
         "display": 'block',
     });
     $(".screen_container").append(jqueryDom);
+    $("input").val("");
     return jqueryDom;
 }
 // 为弹幕添加定时任务
