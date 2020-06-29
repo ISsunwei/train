@@ -1,0 +1,358 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>方舟常用代码一览表</title>
+<link rel="stylesheet" href="./css/lightbox.css">
+<link href="./css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="./css/style.css" rel='stylesheet' type='text/css' />
+<link rel="icon" href="./logo.png" type="image/x-icon"/>
+
+<!-- jQuery (necessary JavaScript plugins) -->
+<script type='text/javascript' src="./js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="./js/jquery.searchableSelect.js"></script>
+
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Game Spot Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171038526-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-171038526-1');
+</script>
+  
+</head>
+<body>        
+<!-- header -->
+<div class="banner banner2">
+  <div class="container">
+		 <div class="headr-right">
+				<div class="details">
+					<ul>
+						<li>ARK干货分享小站</li>
+					</ul>
+			  </div>
+		 </div>
+		 <div class="banner_head_top">
+			  <div class="logo">
+					 <h1><a href="./index.html"><img src="./logo.png" width="66" height="66"><span>方舟代码一览表</span></a></h1>
+			 </div>	
+			 <div class="top-menu">	 
+			     <div class="content white">
+					 <nav class="navbar navbar-default">
+						 <div class="navbar-header">
+		
+						 </div>
+						 <!--/navbar header-->		
+						 
+							 <ul class="nav navbar-nav">
+								 <li><a href="./index.html" target="_parent">回到主页</a></li>
+							 </ul>
+						
+						  <!--/navbar collapse-->
+					 </nav>
+					  <!--/navbar-->
+				 </div>
+					 <div class="clearfix"></div>
+					<script type="text/javascript" src="./js/bootstrap-3.1.1.min.js"></script>
+		   </div>
+				 <div class="clearfix"></div>
+	   </div>
+	 </div>
+</div>
+<!--pagesstarts-->
+
+<div class="pages">
+<div class="container">	
+<h2 class="top">方舟常用单机/管理员代码一览表</h2><br>
+	<p>游戏中按 <b>[Tab]</b> 键输入以下各代码，按 <b>[回车]</b> 键后确认生效（代码不区分大小写）</p>
+	<br>
+				<div class="alert alert-info" role="alert">
+		            <h4><b>系统综合类代码</b></h4>
+		 		</div> 
+					<div class="bs-example">
+						<table class="table">
+						  <thead>
+							<tr>
+							  <td><strong>功能</strong></td>
+							  <td ><strong>单机指令</strong></td>
+							  <td ><strong>服管员指令</strong></td>
+							  <td ><strong>备注</strong></td>
+							</tr>							
+						  <tbody>
+							<tr>
+							  <td>开启作弊</td>
+							  <td >(无)</td>
+							  <td >enablecheats [密码]</td>
+							  <td >输入密码登入管理权限。例：enablecheats 888888</td>
+							</tr>
+							<tr>
+							  <td>上帝(无敌)</td>
+							  <td >god</td>
+							  <td >admincheat god</td>
+							  <td >[开/关] 某些情况依旧会死，常配合infinitestats使用</td>
+							</tr>
+							<tr>
+							  <td>建造模式</td>
+							  <td >gcm</td>
+							  <td >admincheat gcm</td>
+							  <td >[开/关] 解锁印痕无敌无负重限制，获得管理员枪</td>
+							</tr>
+							<tr>
+							  <td>飞行模式</td>
+							  <td >fly</td>
+							  <td >admincheat fly</td>
+							  <td >可自由在空中移动，使用walk命令退出，遇水自动失效</td>
+							</tr>
+							<tr>
+							  <td>无限状态</td>
+							  <td >infinitestats</td>
+							  <td >admincheat infinitestats</td>
+							  <td >[开/关] 属性状态/弹药等不减</td>
+							</tr>
+							<tr>
+							  <td>无视模式</td>
+							  <td >EnemyInvisible</td>
+							  <td >admincheat EnemyInvisible</td>
+							  <td >[开/关] 玩家被所有生物忽略</td>
+							</tr>
+							<tr>
+							<td>让我静静</td>
+							  <td >LeaveMeAlone</td>
+							  <td >admincheat LeaveMeAlone</td>
+							  <td >God、InfiniteStats、EnemyInvisible组合效果</td>
+							</tr>
+							<tr>
+							<td>管理光环</td>
+							  <td >GMBuff</td>
+							  <td >admincheat GMBuff</td>
+							  <td >LeaveMeAlone代码效果，并获得经验</td>
+							</tr>
+                            <tr>
+							  <td>穿墙模式</td>
+							  <td >ghost</td>
+							  <td >admincheat ghost</td>
+							  <td >可穿过物体、建筑、生物、地形等所有实体</td>
+							</tr>
+							<tr>
+							  <td>恢复行走</td>
+							  <td >walk</td>
+							  <td >admincheat walk</td>
+							  <td >恢复行走，常用于配合关闭飞行、穿墙模式</td>
+							</tr>
+							<tr>
+							  <td>强制驯服</td>
+							  <td >forcetame</td>
+							  <td >admincheat forcetame</td>
+							  <td >[对准目标]强制立即驯化目标单位(没有鞍也能骑)</td>
+							</tr>
+							<tr>
+							  <td>立即驯服</td>
+							  <td >dotame</td>
+							  <td >admincheat dotame</td>
+							  <td >[对准目标]立即驯化目标单位(有驯服成功特效)</td>
+							</tr>
+							<tr>
+							  <td>立即杀死</td>
+							  <td >kill</td>
+							  <td >admincheat Kill</td>
+							  <td >[对准目标]杀死面前目标单位(保留尸体或残渣)</td>
+							</tr>
+							<tr>
+							  <td>自残</td>
+							  <td >hurtme [数字]</td>
+							  <td >admincheat hurtme [数字]</td>
+							  <td >自残([数字]为整数，超过生命值就起到自杀功能)</td>
+							</tr>
+							<tr>
+							  <td>使自己昏迷</td>
+							  <td >ExecSetSleeping true</td>
+							  <td >admincheat ExecSetSleeping true</td>
+							  <td >使自己昏迷(晕倒\睡眠)</td>
+							</tr>
+							<tr>
+							  <td>增加经验</td>
+							  <td >addExperience [数字] 0 0 0</td>
+							  <td >admincheat addExperience [数字] 0 0 0</td>
+							  <td >给自己增加[数字]的经验值，骑着龙可给龙和自己同时加</td>
+							</tr>
+							<tr>
+							  <td>增加目标经验</td>
+							  <td >GiveExpToTarget [数字] 0 0</td>
+							  <td >admincheat GiveExpToTarget [数字] 0 0</td>
+							  <td >给目标增加[数字]的经验值</td>
+							</tr>
+							<tr>
+							  <td>增加六角币</td>
+							  <td >addHexagons</td>
+							  <td >admincheat addHexagons</td>
+							  <td >给自己增加六角币</td>
+							</tr>
+							<tr>
+							  <td>弹药无限</td>
+							  <td >ToggleInfiniteAmmo</td>
+							  <td >admincheat ToggleInfiniteAmmo</td>
+							  <td >[开/关]仍需装填，重复输代码开/关</td>
+							</tr>
+							<tr>
+							  <td>状态补满</td>
+							  <td >RefillStats</td>
+							  <td >admincheat RefillStats</td>
+							  <td >所有状态补满一次、骑龙时龙也补满</td>
+							</tr>
+							<tr>
+							  <td>最高飞升</td>
+							  <td >MaxAscend 0</td>
+							  <td >admincheat MaxAscend 0</td>
+							  <td >解锁最高各Boss飞升/提升等级/解锁蓝图</td>
+							</tr>
+							<tr>
+							  <td>拉风GM</td>
+							  <td >EnvQA</td>
+							  <td >EnvQA</td>
+							  <td >立即获得TEK套装\GMbuff\显示FPS等</td>
+							</tr>
+							<tr>
+							  <td>观察者模式</td>
+							  <td >EnableSpectator</td>
+							  <td >admincheat EnableSpectator</td>
+							  <td >开启观察者模式，开启时原角色会消失</td>
+							</tr>
+							<tr>
+							  <td>退出观察者</td>
+							  <td >StopSpectating</td>
+							  <td >admincheat StopSpectating</td>
+							  <td >退出观察者模式，退出后要重新重生原角色</td>
+							</tr>
+							<tr>
+							  <td>删除目标</td>
+							  <td >DestroyMyTarget</td>
+							  <td >admincheat DestroyMyTarget</td>
+							  <td >[对准目标]删除面前目标</td>
+							</tr>
+							<tr>
+							  <td>删除所有单位</td>
+							  <td >DestroyAllEnemies</td>
+							  <td >admincheat DestroyAllEnemies</td>
+							  <td >删除所有非人类生物（包括被驯服的动物）</td>
+							</tr>
+							<tr>
+							  <td>摧毁所有建筑</td>
+							  <td >DestroyStructures</td>
+							  <td >admincheat DestroyStructures</td>
+							  <td >摧毁属于玩家的所有建筑</td>
+							</tr>
+							<tr>
+							  <td>删除野生动物</td>
+							  <td >DestroyWildDinos</td>
+							  <td >admincheat DestroyWildDinos</td>
+							  <td >删除所有野生生物</td>
+							</tr>
+							<tr>
+							  <td>解锁印痕</td>
+							  <td >GiveEngrams</td>
+							  <td >admincheat GiveEngrams</td>
+							  <td >解锁所有印痕技能，仅本次有效重进游戏失效</td>
+							</tr>
+							<tr>
+							  <td>解锁笔记</td>
+							  <td >GiveAllExplorerNotes</td>
+							  <td >admincheat GiveAllExplorerNotes</td>
+							  <td >解锁所有探险者笔记</td>
+							</tr>
+							<tr>
+							  <td>解锁成就</td>
+							  <td >UnlockAchievement</td>
+							  <td >admincheat UnlockAchievement</td>
+							  <td >解锁所有成就</td>
+							</tr>
+							<tr>
+							  <td>伤害显示</td>
+							  <td >ToggleDamageNumbers</td>
+							  <td >admincheat ToggleDamageNumbers</td>
+							  <td >显示伤害值</td>
+							</tr>
+							<tr>
+							  <td>复制坐标</td>
+							  <td >CopyCoordsToClipboard</td>
+							  <td >admincheat CopyCoordsToClipboard</td>
+							  <td >复制当前坐标到剪切板</td>
+							</tr>
+							<tr>
+							  <td>设定时间</td>
+							  <td >SetTimeOfDay [时:分:秒]</td>
+							  <td >admincheat settimeofday [时:分:秒]</td>
+							  <td >设定当前游戏时间，例：settimeofday 8:00</td>
+							</tr>
+							<tr>
+							  <td>游戏速度</td>
+							  <td >slomo [数字]</td>
+							  <td >admincheat slomo [数字]</td>
+							  <td >设定游戏时间流速 (范围1~20)</td>
+							</tr>
+							<tr>
+							  <td>冻结游戏</td>
+							  <td >playersonly</td>
+							  <td >admincheat playersonly</td>
+							  <td >冻结除自己整个游戏和时间，重复输代码开/关</td>
+							</tr>
+							<tr>
+							  <td>存档</td>
+							  <td >saveworld</td>
+							  <td >admincheat saveworld</td>
+							  <td >强制单人/服务器存储当前游戏，单人存档到本地硬盘</td>
+							</tr>
+							<tr>
+							  <td>强加部落</td>
+							  <td >ForceJoinTribe 0 </td>
+							  <td >admincheat ForceJoinTribe 0 </td>
+							  <td >[对准目标部落建筑]强制进入目标部落</td>
+							</tr>
+							<tr>
+							  <td>收编部落</td>
+							  <td >TakeTribe 0 </td>
+							  <td >admincheat TakeTribe 0 </td>
+							  <td >[对准目标部落建筑]强制获得目标部落所有权</td>
+							</tr>
+							<tr>
+							  <td>成为部落长</td>
+							  <td >MakeTribeFounder</td>
+							  <td >admincheat MakeTribeFounder </td>
+							  <td >强制成为部落所有人</td>
+							</tr>
+							
+							
+						  </tbody>
+						</table>
+					</div>
+					<br>
+					<br>
+					<div class="alert alert-info" role="alert">
+					    <h5>收集时间有限，如果你有未找到的单位代码需要添加，请及时反馈给我们以便尽快添加更新。</h5>
+					</div> 
+</div>
+</div>
+
+<div class="Buttons">
+    <h2 align="center" class="b2"><a href="#"><span class="label label-info">点我回到顶部</span></a></h2>
+</div>
+
+<!---->
+<div class="copywrite">
+<div class="container">
+		 <p>Copyright &copy; ARK方舟干货站 All rights reserved.</p>
+	 </div>
+     <div class="clearfix"></div>
+</div>
+<!---->
+
+
+</body>
+</html>

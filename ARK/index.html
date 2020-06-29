@@ -1,0 +1,450 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>ARK方舟干货站</title>
+<link href="./css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="./css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="./css/lightbox.css">
+<link rel="icon" href="./logo.png" type="image/x-icon"/>
+<script type='text/javascript' src="./js/jquery-1.11.1.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script>
+function randomServers(){
+	var serverDivList = $("div[role='tabpanel'] div[class='game1']");
+	var count1=0;
+	$(serverDivList).each(function(){
+		$(this).attr("sort", Math.random() + parseInt($(this).attr("basenum")));
+		count1++;
+	});
+	for(var i = 0; i<count1;i++){
+		$(serverDivList).each(function(){
+			if(typeof($(this).prev().html()) != "undefined"){
+				var prevSort = parseFloat($(this).prev().attr("sort"));
+				var currentSort = parseFloat($(this).attr("sort"));
+				if(currentSort > prevSort){
+					$(this).insertBefore($(this).prev());
+				}
+			}
+		});
+	}
+}
+$(document).ready(function(){
+	randomServers();
+});
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171038526-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-171038526-1');
+</script>
+
+</head>
+<body>
+<div class="banner">
+<div class="container">
+<div class="headr-right">
+<div class="details">
+<ul>
+<li>✉ 邮箱: sunwei2505906103@163.com</li>
+<li>☺ qq: 2505906103 </li>
+<li><a href="#WeChat">☺ 我的微信</a></li>
+</ul>
+</div>
+</div>
+<div class="banner_head_top">
+<div class="logo">
+<h1><a href="./index.html"><img src="./logo.png" width="66" height="66">ARK方舟<span>☀干货站</span></a></h1>
+</div>
+<div class="top-menu">
+<div class="content white">
+<nav class="navbar navbar-default">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li><a href="./compute/" target="_blank">★驯服计算器★</a></li>
+<li class="dropdown">
+<a href="#" class="scroll dropdown-toggle" data-toggle="dropdown">必用干货<b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li><a href="./resource/" target="_blank">方舟各地图各资源分布详图</a></li>
+<li><a href="./resource/arkmaps.html" target="_blank">方舟全坐标地图高清大图</a></li>
+<li><a href="./kibble.html" target="_blank">方舟最新中文饲料体系全图</a></li>
+<li><a href="./recipe.html" target="_blank">方舟最新中文消耗品配方表</a></li>
+<li><a href="./boss.html" target="_blank">方舟最新BOSS信息详情表</a></li>
+<li><a href="./resource/artifacts.html" target="_blank">方舟最新的神器坐标详情表</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="scroll dropdown-toggle" data-toggle="dropdown">代码指令<b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li><a href="./code.html" target="_blank">方舟控制台指令<strong>★常用★</strong></a></li>
+</ul>
+</li>
+<li><a href="./baike/" target="_blank">萌新百科</a></li>
+<li><a href="./server/" target="_blank">服器搜罗</a></li>
+<li class="dropdown">
+<a href="#" class="scroll dropdown-toggle" data-toggle="dropdown">其他内容<b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li><a href="https://www.dododex.com" target="_blank">外链| Dododex驯服计算器</a></li>
+<li><a href="https://ark.gamepedia.com/ARK_Survival_Evolved_Wiki" target="_blank">外链| 方舟官方维基百科</a></li>
+<li><a href="https://www.battlemetrics.com" target="_blank">外链| BM服务器搜索网站</a></li>
+<li><a href="https://survivetheark.com" target="_blank">外链| 方舟官方网站社区</a></li>
+<li><a href="https://tieba.baidu.com/f?kw=方舟生存进化" target="_blank">外链| 方舟百度贴吧社区</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+<div class="clearfix"></div>
+<script type="text/javascript" src="./js/bootstrap-3.1.1.min.js"></script>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="banner-info">
+<h3>欢迎来到ARK方舟干货分享站</h3>
+<h2>分享 快乐</h2>
+</div>
+</div>
+</div>
+<div class="welcome">
+<div class="container">
+<div class="welcome-info">
+<p>本小站支持各类移动端浏览。我们将不断收集、整理、更新各类和方舟有关的干货资料，在这里分享给小伙伴们！希望小站能发挥它小小的光和热给更多伙伴们带来便利！^^ 新站初建还有许多不足，欢迎大家随时反馈网站问题和建议。</p>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="container">
+<div class="col-md-8 content-left">
+<div class="information">
+<h4><strong>最新消息</strong></h4>
+<div class="information_grids">
+<div class="info">
+<p>😊 6月15日更新，最新内容：</p>
+<a href="./resource/" target="_blank">水晶岛资源分布图</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="./resource/artifacts.html" target="_blank">水晶岛全神器详表</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<a href="./baike/" target="_blank">萌新入门FQA百科</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="./taoyuan.html" target="_blank">世外桃源计划启动</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+<div class="info-pic">
+<img src="./images/ps.jpg" class="img-responsive">
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+<div class="games-grids">
+<div class="game-grid-left">
+<div class="grid1">
+<h5 class="act"><a href="./compute/index.html" target="_blank">工具</a></h5>
+<a href="./compute/index.html" target="_blank"><img src="./images/c1.jpg" class="img-responsive" alt=""/></a>
+<div class="grid1-info">
+<h4><a href="./compute/" target="_blank">驯服计算器100%完工！</a></h4>
+<p>方舟驯服计算器100%全线完工！真正国人自制的纯中文、超快索引、单位超全的驯服数据查询工具！计算器免费无偿大放送！~😜</p>
+</div>
+<div class="more">
+<a href="./compute/index.html" target="_blank">更多...</a>
+</div>
+</div>
+<div class="grid2">
+<h5 class="act"><a href="https://wallhaven.cc/search?q=ARK&page=3" target="_blank">欣赏</a></h5>
+<a href="./gallery.html" target="_blank"><img src="./images/c2.jpg" class="img-responsive" alt=""/></a>
+<div class="grid1-info">
+<h4><a href="https://wallhaven.cc/search?q=ARK&page=3" target="_blank">策马扬鞭驰骋疆场</a></h4>
+<p>方舟高清图片库专栏进阶上线，欢迎伙伴们赏析...😜</p>
+</div>
+<div class="more">
+<a href="https://wallhaven.cc/search?q=ARK&page=3" target="_blank">更多...</a>
+</div>
+</div>
+</div>
+<div class="game-grid-right">
+<div class="grid3">
+<h5 class="act"><a href="./kibble.html" target="_blank">常用</a></h5>
+<a href="./kibble.html" target="_blank"><img src="./images/c3.jpg" class="img-responsive" alt=""/></a>
+<div class="grid1-info">
+<h4><a href="./kibble.html" target="_blank">方舟最新饲料系统中文全图</a></h4>
+<p>经整合dododex内容重新编排翻译，我们将方舟最新饲料系统及对应生物详细分布一张图完全展示。</p>
+</div>
+<div class="more">
+<a href="./kibble.html" target="_blank">更多...</a>
+</div>
+</div>
+<div class="grid4">
+<h5 class="act"><a href="./recipe.html" target="_blank">常用</a></h5>
+<a href="./recipe.html" target="_blank"><img src="./images/c4.jpg" class="img-responsive" alt=""/></a>
+<div class="grid1-info">
+<h4><a href="./recipe.html" target="_blank">方舟最新消耗品配方中文表</a></h4>
+<p>内容修订来自网络，我们整合了dododex和wiki的内容并对其进行重新编排翻译，将消耗品配方以全图形式展示,会极大方便了各位小伙伴使用和查询。</p>
+</div>
+<div class="more">
+<a href="./recipe.html" target="_blank">更多...</a>
+</div>
+</div>
+</div>
+<div class="game-grid-left">
+<div class="grid1">
+<h5 class="act"><a href="./resource/arkmaps.html" target="_blank">常用</a></h5>
+<a href="./resource/res-island.html" target="_blank"><img src="./images/c5.jpg" class="img-responsive" alt=""/></a>
+<div class="grid1-info">
+<h4><a href="./resource/index.html" target="_blank">地图各类资源分布详图！</a></h4>
+<p>我们已彻底整理了wiki网中的各方舟地图各类资源、特殊物资点等的详细分布图！并且经过长时间调试制作成极为方便简洁的查询工具页面，无需下载操作极为便利、快捷、直观、简洁！绝对是各位萌新小伙伴快速查询的有力工具~</p>
+</div>
+<div class="more">
+<a href="./resource/artifacts.html" target="_blank">更多...</a>
+</div>
+</div>
+</div>
+<div class="game-grid-right">
+<div class="grid4">
+<h5 class="act"><a href="code.html" target="_blank">常用</a></h5>
+<a href="./code.html" target="_blank"><img src="./images/c6.jpg" class="img-responsive" alt=""/></a>
+<div class="grid1-info">
+<h4><a href="./code.html" target="_blank">方舟常用指令代码一览</a></h4>
+<p>我们已整理出方舟最常见的各类单机以及管理员使用的代码指令，游戏中按Tab键呼出粘贴进使用即可。玩家使用部分代码可很好地快速熟悉和了解者神奇的方舟大陆世界，服主和代码高频使者可下载本站分享的工具，极为方便全面！</p>
+</div>
+<div class="more">
+<a href="./code.html" target="_blank">更多...</a>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+<div class="col-md-4 content-right">
+<ul class="nav nav-tabs nav2" role="tablist">
+<li role="presentation" class="active"><a href="./winwin.html" aria-controls="home" role="tab" data-toggle="tab" target="_blank"><span style="font-size: 1.2em; color:#666666;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;服&nbsp;&nbsp;务&nbsp;&nbsp;器&nbsp;&nbsp;橱&nbsp;&nbsp;窗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a></li>
+</ul>
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active re-pad2" id="home">
+<div class="game1" basenum="10">
+<div class="col-md-3 tab-pic">
+<a href="./server/index.html" target="_blank"><img src="./arklogo.png" alt="/" class="img-responsive"></a>
+</div>
+<div class="col-md-9 tab-pic-info">
+<h4><a href="./server/index.html" target="_blank">【99ARK方舟】</a></h4>
+<p>低倍PVE 11+8通-5倍<br>纯净+Mod-开服:18年08月</p>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="game1" basenum="10">
+<div class="col-md-3 tab-pic">
+<a href="./server/index.html" target="_blank"><img src="./arklogo.png" alt="/" class="img-responsive"></a>
+</div>
+<div class="col-md-9 tab-pic-info">
+<h4><a href="./server/index.html" target="_blank">【0210方舟】</a></h4>
+<p>低倍PVE-12通-采2驯5孵5<br>基础Mod -开服:19年01月</p>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="game1" basenum="10">
+<div class="col-md-3 tab-pic">
+<a href="./server/index.html" target="_blank"><img src="./arklogo.png" alt="/" class="img-responsive"></a>
+</div>
+<div class="col-md-9 tab-pic-info">
+<h4><a href="./server/index.html" target="_blank">【4399方舟】</a></h4>
+<p>低倍PVE-12通-采3驯5孵10<br>基础Mod -开服:19年09月</p>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="game1" basenum="10">
+<div class="col-md-3 tab-pic">
+<a href="./server/index.html" target="_blank"><img src="./arklogo.png" alt="/" class="img-responsive"></a>
+</div>
+<div class="col-md-9 tab-pic-info">
+<h4><a href="./server/index.html" target="_blank">【0 0 8 方舟】</a></h4>
+<p>低倍PVP-16通-采5驯10孵15<br>基础Mod -开服:20年03月</p>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="game1" basenum="10">
+<div class="col-md-3 tab-pic">
+<a href="./server/index.html" target="_blank"><img src="./arklogo.png" alt="/" class="img-responsive"></a>
+</div>
+<div class="col-md-9 tab-pic-info">
+<h4><a href="./server/index.html" target="_blank">【4396双鱼座】</a></h4>
+<p>中倍PVE-30通-采5驯8孵10<br>各类Mod -开服:20年05月</p>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="game1" basenum="8">
+<div class="col-md-3 tab-pic">
+<a href="./server/index.html" target="_blank"><img src="./arklogo2.png" alt="/" class="img-responsive"></a>
+</div>
+<div class="col-md-9 tab-pic-info">
+<h4><a href="./server/index.html" target="_blank">【M1方舟】<span style="font-size: 0.7em; color:#e76767;">[付费]</span></a></h4>
+<p>PVE2x10通-1倍/5倍-无商店</p>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="game1" basenum="7">
+<div class="col-md-3 tab-pic">
+<a href="./server/index.html" target="_blank"><img src="./arklogo2.png" alt="/" class="img-responsive"></a>
+</div>
+<div class="col-md-9 tab-pic-info">
+<h4><a href="./server/index.html" target="_blank">【TiMi方舟】</a></h4>
+<p>PVE/PVP采3驯5-基础Mod</p>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="game1" basenum="6">
+<div class="col-md-3 tab-pic">
+<a href="./server/index.html" target="_blank"><img src="./arklogo2.png" alt="/" class="img-responsive"></a>
+</div>
+<div class="col-md-9 tab-pic-info">
+<h4><a href="./server/index.html" target="_blank">【2048Team】</a></h4>
+<p>PVE13通采3驯5 -基础Mod</p>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="game1" basenum="6">
+<div class="col-md-3 tab-pic">
+<a href="./server/index.html" target="_blank"><img src="./arklogo2.png" alt="/" class="img-responsive"></a>
+</div>
+<div class="col-md-9 tab-pic-info">
+<h4><a href="./server/index.html" target="_blank">【3303方舟】</a></h4>
+<p>PVP9通-采3驯10无Mod-6月</p>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="game1" basenum="6">
+<div class="col-md-3 tab-pic">
+<a href="./server/index.html" target="_blank"><img src="./arklogo2.png" alt="/" class="img-responsive"></a>
+</div>
+<div class="col-md-9 tab-pic-info">
+<h4><a href="./server/index.html" target="_blank">【1101方舟】</a></h4>
+<p>PVE8通-采3驯10无Mod-6月</p>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="game1" basenum="6">
+<div class="col-md-3 tab-pic">
+<a href="./server/index.html" target="_blank"><img src="./arklogo2.png" alt="/" class="img-responsive"></a>
+</div>
+<div class="col-md-9 tab-pic-info">
+<h4><a href="./server/index.html" target="_blank">【7222方舟】</a></h4>
+<p>PVE9通-采3驯8基Mod-6月</p>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="game1" basenum="6">
+<div class="col-md-3 tab-pic">
+<a href="./server/index.html" target="_blank"><img src="./arklogo2.png" alt="/" class="img-responsive"></a>
+</div>
+<div class="col-md-9 tab-pic-info">
+<h4><a href="./server/index.html" target="_blank">【6 8 0 方舟】</a></h4>
+<p>PVE12通-采3驯5-基础Mod</p>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="game1" basenum="5">
+<div class="col-md-3 tab-pic">
+<a href="./server/index.html" target="_blank"><img src="./arklogo2.png" alt="/" class="img-responsive"></a>
+</div>
+<div class="col-md-9 tab-pic-info">
+<h4><a href="./server/index.html" target="_blank">【Dt_wqy方舟】</a></h4>
+<p>PVE/PVP纯净公益9通 2倍</p>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="game1" basenum="4">
+<div class="col-md-3 tab-pic">
+<a href="./server/index.html" target="_blank"><img src="./arklogo2.png" alt="/" class="img-responsive"></a>
+</div>
+<div class="col-md-9 tab-pic-info">
+<h4><a href="./server/index.html" target="_blank">【1218方舟】</a></h4>
+<p>PVE/PVP公益宁静2x10通4倍</p>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+<div class="category blog-ctgry">
+<h4>精品教程推荐</h4>
+<div class="list-group">
+<a href="./baike/" target="_blank" class="list-group-item">方舟生存进化汇总萌新百科地图</a>
+<a href="https://space.bilibili.com/8888173/favlist?fid=492860573" target="_blank" class="list-group-item">方舟生存进化孤岛从零生存干货放送</a>
+<a href="https://space.bilibili.com/8888173/favlist?fid=775789073" target="_blank" class="list-group-item">方舟生存进化从零生存第二季焦土篇</a>
+<a href="https://space.bilibili.com/8888173/favlist?fid=944391273" target="_blank" class="list-group-item">方舟生存进化从零生存第三季畸变篇</a>
+<a href="https://www.bilibili.com/video/av60205204" target="_blank" class="list-group-item">方舟生存进化三分钟新手快速入门攻略</a>
+<a href="https://www.bilibili.com/video/av62259669" target="_blank" class="list-group-item">方舟生存进化快速了解常见据点选址</a>
+<a href="https://www.bilibili.com/video/av64504538" target="_blank" class="list-group-item">快速搞定方舟最常见的游戏设置问题</a>
+<a href="https://www.bilibili.com/video/av64068167" target="_blank" class="list-group-item">什么样配置的电脑可以流畅运行方舟呢？</a>
+<a href="https://www.bilibili.com/video/av64951143" target="_blank" class="list-group-item">玩方舟卡？调完这几项帧率猛涨50帧！</a>
+<a href="https://baike.baidu.com/item/%E6%96%B9%E8%88%9F%EF%BC%9A%E7%94%9F%E5%AD%98%E8%BF%9B%E5%8C%96/17661295?fr=aladdin" target="_blank" class="list-group-item">方舟生存进化官方游戏简介游戏概述大全</a>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+<br>
+<div class="footer">
+<div class="container">
+<div class="footer-grids">
+<div class="col-md-3 ftr-grid">
+<h3>相关视频分享平台</h3>
+<br><a href="https://space.bilibili.com/8888173/" target="_blank"><img src="./icon/bilibili.ico" width="32" height="32"></a>&nbsp;&nbsp;
+<a href="https://www.ixigua.com/home/1983171705438270" target="_blank"><img src="./icon/ixigua.png" width="32" height="32"></a>&nbsp;&nbsp;
+<a href="https://www.iqiyi.com/u/1812607188/" target="_blank"><img src="./icon/iqiyi.png" width="32" height="32"></a>&nbsp;&nbsp;
+<a href="https://haokan.baidu.com/author/1656149318657252" target="_blank"><img src="./icon/haokan.png" width="32" height="32"></a>&nbsp;&nbsp;<br><br>
+<a href="https://v.qq.com/vplus/0ad934803742b0718cd6e6189ae90664" target="_blank"><img src="./icon/tx.ico" width="32" height="32"></a>&nbsp;&nbsp;
+<a href="https://weibo.com/u/7268019997" target="_blank"><img src="./icon/weibo.ico" width="32" height="32"></a>&nbsp;&nbsp;
+<a href="douyin.html" target="_blank"><img src="icon/douyin.png" width="32" height="32"></a>&nbsp;&nbsp;
+<a href="https://www.youtube.com/channel/UCtyGJoXRDckl4OBzAG499Bg/" target="_blank"><img src="./icon/youtube.png" width="32" height="32"></a>&nbsp;&nbsp;
+<div class="clearfix"></div>
+</div>
+<div class="col-md-3 ftr-grid">
+<h3>合作共赢支援组团</h3>
+<ul class="ftr-list">
+<li><a href="./winwin.html#1" target="_blank">☁&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;赞助合作&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;橱窗展示</a></li>
+<li><a href="./winwin.html#2" target="_blank">☁&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;合作洽谈&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;互助共赢</a></li>
+<li><a href="./winwin.html#3" target="_blank">☁&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;加入我们&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;组团共创</a></li>
+<li><a href="./winwin.html#4" target="_blank">☁&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;建议反馈&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;联系我们</a></li>
+</ul>
+<div class="clearfix"></div>
+</div>
+<div class="col-md-3 ftr-grid">
+<h3>官方方舟交流群</h3>
+<p><span style="color: #fff; font-size: 0.8rem;">
+一群：300709441 <br>
+二群：329246753 <br>
+三群：875650765 <br>
+四群：334623220 <br>
+五群：160256781
+<div class="clearfix"></div>
+</div>
+<div class="col-md-3 ftr-grid" id="WeChat">
+<h3>我的微信</h3>
+<img src="./images/WeChat.png" style="width: 110px; height: 110px;">
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="copywrite">
+<div class="container">
+<p>邮箱: sunwei2505906103@163.com&nbsp;&nbsp;&nbsp;&nbsp;合作QQ: 2505906103</p>
+<p>Copyright &copy; 2019-2020.ARK方舟干货站 All rights reserved. <a href="http://www.beian.miit.gov.cn/" target="_blank">琼ICP备19059540号</a></p>
+<p><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278052850'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/z_stat.php%3Fid%3D1278052850%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
+         </script>
+</p>
+<p class="h"><a href="http://m1ark.com" title="M1方舟生存进化">M1方舟生存进化</a></p>
+<script>$(function(){$('.h').hide()})</script>
+</div>
+</div>
+</body>
+</html>
