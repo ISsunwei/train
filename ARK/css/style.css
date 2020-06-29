@@ -2064,3 +2064,6 @@ h5.act a,h5.race a,h5.sport a,h5.arc a{
     padding: 7px!important;
 }
 }
+.BMap_mask {
+    background: transparent url(https://api.map.baidu.com/images/blank.gif);
+}
